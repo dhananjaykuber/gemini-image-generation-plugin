@@ -1,17 +1,26 @@
 {
     "name": "gemini-image-generation",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "build": "wp-scripts build webpack.config.js",
-        "start": "wp-scripts start"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "description": "WordPress plugin for generating images using Gemini AI.",
+    "author": "Dhananjay Kuber",
     "type": "module",
+    "private": true,
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "gemini",
+        "image-generation"
+    ],
+    "scripts": {
+        "build": "wp-scripts build NODE_ENV=production --config webpack.config.js",
+        "start": "wp-scripts start --config webpack.config.js",
+        "lint": "wp-scripts lint-js src",
+        "lint:fix": "npm run lint -- --fix"
+    },
     "dependencies": {
         "@wordpress/scripts": "^30.20.0"
-    }
+    },
+    "browserslist": [
+        "extends @wordpress/browserslist-config"
+    ]
 }
