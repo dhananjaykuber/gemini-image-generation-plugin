@@ -9,6 +9,8 @@ import path from 'path';
  */
 import defaultConfig from '@wordpress/scripts/config/webpack.config.js';
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 // Extend the default config.
 const sharedConfig = {
     ...defaultConfig,
@@ -17,7 +19,7 @@ const sharedConfig = {
         filename: '[name].js',
         chunkFilename: '[name].js',
     },
-    devtool: 'source-map',
+    devtool: isProduction ? false : 'source-map',
     optimization: {
         ...defaultConfig.optimization,
         splitChunks: {
