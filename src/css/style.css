@@ -1,0 +1,13 @@
+.geminimedia-content {
+    padding: 0 16px;
+}
+
+.geminimedia-content .geminimedia-title {
+    font-size: 14px;
+}
+
+.geminimedia-content #gemini_prompt {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 8px;
+}
