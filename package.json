@@ -1,0 +1,17 @@
+{
+    "name": "gemini-image-generation",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "wp-scripts build",
+        "start": "wp-scripts start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "@wordpress/scripts": "^30.20.0"
+    }
+}
