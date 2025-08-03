@@ -21,6 +21,9 @@ class Plugin {
 	 */
 	protected function __construct() {
 
+		Assets::get_instance();
+		Template::get_instance();
+
 		$this->setup_hooks();
 	}
 
