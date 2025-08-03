@@ -23,6 +23,11 @@ define( 'GEMINI_IMG_GEN_FEATURES_VERSION', '0.1.0' );
 define( 'GEMINI_IMG_GEN_FEATURES_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
 define( 'GEMINI_IMG_GEN_FEATURES_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
 
+// phpcs:disable WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant
+require_once GEMINI_IMG_GEN_FEATURES_PATH . '/inc/helpers/autoloader.php';
+require_once GEMINI_IMG_GEN_FEATURES_PATH . '/inc/helpers/custom-functions.php';
+// phpcs:enable WordPressVIPMinimum.Files.IncludingFile.UsingCustomConstant
+
 /**
  * Enqueue scripts and styles for the plugin.
  *
