@@ -24,6 +24,7 @@ class Plugin {
 		Assets::get_instance();
 		Template::get_instance();
 		Ajax::get_instance();
+		Settings::get_instance();
 
 		$this->setup_hooks();
 	}
